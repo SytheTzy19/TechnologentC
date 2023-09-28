@@ -1,0 +1,121 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply some basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('383877023_348567254269373_7037439857860715987_n.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 170px; /* Adjust the logo size as needed */
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.menu li {
+    font-size: 18px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li a:hover {
+    color: #67abe2; /* Change this to the color you want when hovering */
+    text-decoration: underline; /* This adds an underline when hovering */
+    border: 1px solid #1356b9; /* This adds a border when hovering */
+}
+
+
+.main {
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+    position: relative;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 300px;
+}
+
+h1 {
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #553c9a 45%, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+               3px 4px 4px rgba(179, 147, 211, 0.15),
+               4px 6px 4px rgba(179, 147, 211, 0.2),
+               5px 8px 4px rgab(179, 147, 211, 0.25);
+}
+
+.explore-button {
+    background-color: #0151a7;
+    color: #a84cff;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.explore-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+}
